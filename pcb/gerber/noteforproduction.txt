@@ -1,0 +1,2 @@
+For stencil production use *-F.Paste.
+For PCB production all other files.
