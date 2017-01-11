@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.2+dfsg1-stable)
+(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
     (links 1164)
     (no_connects 144)
-    (area 64.117856 19.599999 176.382144 116.400001)
+    (area 64.192856 19.599999 176.307144 116.400001)
     (thickness 1.6)
     (drawings 133)
     (tracks 4250)
@@ -62,10 +62,11 @@
     (mod_text_width 0.15)
     (pad_size 1.6 1.6)
     (pad_drill 0)
-    (pad_to_mask_clearance 0.1)
-    (solder_mask_min_width 0.2)
+    (pad_to_mask_clearance 0.05)
+    (solder_mask_min_width 0.1)
+    (pad_to_paste_clearance -0.03)
     (aux_axis_origin 0 0)
-    (visible_elements FFFFFF7F)
+    (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010f8_80000001)
       (usegerberextensions false)
