@@ -1,14 +1,9 @@
 EESchema Schematic File Version 2
-LIBS:texas
 LIBS:linear
-LIBS:tps7b6950
-LIBS:regul
-LIBS:azoteq
 LIBS:transistors
 LIBS:device
 LIBS:conn
 LIBS:power
-LIBS:diode
 LIBS:ledstipdimmer-cache
 EELAYER 25 0
 EELAYER END
@@ -143,17 +138,6 @@ Wire Wire Line
 Wire Wire Line
 	9750 1600 9950 1600
 $Comp
-L TVS D5
-U 1 1 585E6EB9
-P 1550 1850
-F 0 "D5" H 1550 2000 50  0000 C CNN
-F 1 "SMAJ28CA" H 1550 1700 50  0000 C CNN
-F 2 "Diodes_SMD:SMA_Bipolar" H 1550 1850 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/389/smaj-955168.pdf" H 1550 1850 50  0001 C CNN
-	1    1550 1850
-	0    1    1    0   
-$EndComp
-$Comp
 L C C1
 U 1 1 585E7186
 P 2000 1700
@@ -169,14 +153,7 @@ Wire Wire Line
 	1250 1350 1250 1500
 Connection ~ 1250 1500
 Wire Wire Line
-	1550 1425 1550 1550
-Wire Wire Line
 	1150 2350 1150 1600
-Wire Wire Line
-	1550 2150 1550 2250
-Wire Wire Line
-	1550 2250 1150 2250
-Connection ~ 1150 2250
 Connection ~ 1550 1500
 Wire Wire Line
 	2000 1500 2000 1550
@@ -878,12 +855,12 @@ Connection ~ 5300 2000
 $Comp
 L TEST_1P W1
 U 1 1 58670110
-P 1550 1425
-F 0 "W1" H 1550 1695 50  0000 C CNN
-F 1 "24V" H 1550 1625 50  0000 C CNN
-F 2 "pogo:RECP_709150001050006" H 1750 1425 50  0001 C CNN
-F 3 "" H 1750 1425 50  0000 C CNN
-	1    1550 1425
+P 1550 1350
+F 0 "W1" H 1550 1620 50  0000 C CNN
+F 1 "24V" H 1550 1550 50  0000 C CNN
+F 2 "pogo:RECP_709150001050006" H 1750 1350 50  0001 C CNN
+F 3 "" H 1750 1350 50  0000 C CNN
+	1    1550 1350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -916,7 +893,7 @@ Text Label 6725 1075 0    39   ~ 0
 LD4
 Text Label 3275 1850 0    39   ~ 0
 Vi
-Text Label 1275 2250 0    39   ~ 0
+Text Label 1150 2200 0    39   ~ 0
 PWRm
 $Comp
 L IQS904D U2
@@ -1019,4 +996,6 @@ Text Notes 7650 1525 0    39   ~ 0
 Touch Area\nKeep Clearance
 Text Label 7650 2000 2    39   ~ 0
 CX
+Wire Wire Line
+	1550 1350 1550 1500
 $EndSCHEMATC
